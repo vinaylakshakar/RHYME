@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="ReportViewCell" customModule="RHYME" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="277" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="277" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yub-Bc-8PR">
+                        <rect key="frame" x="16" y="11" width="19" height="22"/>
+                        <accessibility key="accessibilityConfiguration">
+                            <accessibilityTraits key="traits" button="YES" notEnabled="YES"/>
+                        </accessibility>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="19" id="0iu-OL-RIl"/>
+                            <constraint firstAttribute="height" constant="22" id="7id-yM-nLH"/>
+                        </constraints>
+                        <state key="normal" image="unselected"/>
+                        <state key="selected" image="selected"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Other" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yOA-tp-63r">
+                        <rect key="frame" x="51" y="11" width="210" height="22"/>
+                        <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="yub-Bc-8PR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="205-Tn-Jpb"/>
+                    <constraint firstItem="yub-Bc-8PR" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="6vc-B6-XB8"/>
+                    <constraint firstItem="yub-Bc-8PR" firstAttribute="centerY" secondItem="yOA-tp-63r" secondAttribute="centerY" id="Arc-Wx-Ra7"/>
+                    <constraint firstItem="yOA-tp-63r" firstAttribute="leading" secondItem="yub-Bc-8PR" secondAttribute="trailing" constant="16" id="PXM-0s-3bi"/>
+                    <constraint firstItem="yOA-tp-63r" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="haJ-6t-ODR"/>
+                    <constraint firstItem="yub-Bc-8PR" firstAttribute="top" secondItem="yOA-tp-63r" secondAttribute="top" id="lzy-df-3Rx"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="reasonLable" destination="yOA-tp-63r" id="OVF-P5-DH9"/>
+                <outlet property="selectBtn" destination="yub-Bc-8PR" id="QYW-1W-23B"/>
+            </connections>
+            <point key="canvasLocation" x="152.89855072463769" y="72.991071428571431"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="selected" width="19" height="19"/>
+        <image name="unselected" width="19" height="19"/>
+    </resources>
+</document>

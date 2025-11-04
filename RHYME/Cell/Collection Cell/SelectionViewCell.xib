@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="SelectionViewCell" customModule="RHYME" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="114" height="39"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="114" height="39"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jRf-xs-31e">
+                        <rect key="frame" x="0.0" y="0.0" width="114" height="39"/>
+                        <subviews>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hkP-Nu-7pu">
+                                <rect key="frame" x="0.0" y="0.0" width="114" height="39"/>
+                                <color key="backgroundColor" red="0.51764705882352935" green="0.85098039215686272" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusV">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Tasks" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nbs-PD-FcG">
+                                <rect key="frame" x="29" y="11" width="56" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="17" id="cGQ-KV-uUa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.93725490196078431" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="hkP-Nu-7pu" firstAttribute="top" secondItem="jRf-xs-31e" secondAttribute="top" id="FLS-Qo-73T"/>
+                            <constraint firstItem="Nbs-PD-FcG" firstAttribute="centerY" secondItem="jRf-xs-31e" secondAttribute="centerY" id="Igy-qh-uSq"/>
+                            <constraint firstAttribute="trailing" secondItem="hkP-Nu-7pu" secondAttribute="trailing" id="PY1-Hv-ZN9"/>
+                            <constraint firstItem="Nbs-PD-FcG" firstAttribute="centerX" secondItem="jRf-xs-31e" secondAttribute="centerX" id="Qg5-mQ-Qhi"/>
+                            <constraint firstAttribute="bottom" secondItem="hkP-Nu-7pu" secondAttribute="bottom" id="xg4-b6-Dtb"/>
+                            <constraint firstItem="hkP-Nu-7pu" firstAttribute="leading" secondItem="jRf-xs-31e" secondAttribute="leading" id="y6f-mn-6nJ"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusV">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="jRf-xs-31e" secondAttribute="trailing" id="DkU-iK-P1e"/>
+                <constraint firstItem="jRf-xs-31e" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="F7l-Sg-vaU"/>
+                <constraint firstAttribute="bottom" secondItem="jRf-xs-31e" secondAttribute="bottom" id="NXD-il-zJ0"/>
+                <constraint firstItem="jRf-xs-31e" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="taW-f7-TZB"/>
+            </constraints>
+            <connections>
+                <outlet property="manuLable" destination="Nbs-PD-FcG" id="VxM-ek-cXK"/>
+                <outlet property="selectedView" destination="hkP-Nu-7pu" id="ZZk-3p-cey"/>
+            </connections>
+            <point key="canvasLocation" x="66.666666666666671" y="79.352678571428569"/>
+        </collectionViewCell>
+    </objects>
+</document>

@@ -1,0 +1,42 @@
+PODS:
+  - Alamofire (4.9.1)
+  - CropViewController (2.6.0)
+  - iProgressHUD (1.1.1)
+  - IQKeyboardManagerSwift (6.5.6)
+  - JVFloatLabeledTextField (1.2.2)
+  - SDWebImage (5.11.1):
+    - SDWebImage/Core (= 5.11.1)
+  - SDWebImage/Core (5.11.1)
+  - TTGSnackbar (1.10.5)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.7)
+  - CropViewController
+  - iProgressHUD (~> 1.1.1)
+  - IQKeyboardManagerSwift
+  - JVFloatLabeledTextField
+  - SDWebImage
+  - TTGSnackbar
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - CropViewController
+    - iProgressHUD
+    - IQKeyboardManagerSwift
+    - JVFloatLabeledTextField
+    - SDWebImage
+    - TTGSnackbar
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  CropViewController: 7093b39ec3cb508531b22d35773e06cecd7378d8
+  iProgressHUD: caa742128253c97f2c2e1ec59e2bbe6cf689df6a
+  IQKeyboardManagerSwift: c7df9d2deb356c04522f5c4b7b6e4ce4d8ed94fe
+  JVFloatLabeledTextField: df48598472ee015701d509f43e59492a0d4ca208
+  SDWebImage: a7f831e1a65eb5e285e3fb046a23fcfbf08e696d
+  TTGSnackbar: 2bd245d2bbf83639483410273fd936af0b7ba2a9
+
+PODFILE CHECKSUM: fffb2a6bbb5c7b190ab48cd3eacc1912f0969d8d
+
+COCOAPODS: 1.10.1
